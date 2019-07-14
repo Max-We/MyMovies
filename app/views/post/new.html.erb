@@ -5,10 +5,3 @@
 <p>Datum</p>
 <p>Kommentar</p>
 
-<%= form_for :post do |f| %>
-	Film: <%= f.text_field :Title%> <br>
-	Rating: <%= f.range_field :Rating in: 0..10%> <br>
-	Date: <%= f.date_fieldv :Date%> <br>
-	Comment: <%= f.text_area :Comment%> <br>
-	<%= f.submit %>
-<% end %>
