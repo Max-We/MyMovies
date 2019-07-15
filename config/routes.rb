@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  get 'post/post'
-  get 'new' => 'post#new'
-
   get 'home' => 'home#home'
+  get 'profile'  => 'profile#profile'
 root 'home#home'
-resources :post
 end
